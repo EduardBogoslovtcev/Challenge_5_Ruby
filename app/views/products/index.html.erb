@@ -1,5 +1,9 @@
 <h1>Products</h1>
 
 <% @products.each do |product| %>
-  <p><%= product.title %> - $<%= product.price %> (Stock: <%= product.stock_quantity %>)</p>
+  <p>
+    <a href="/products/<%= product.id %>"><%= product.title %></a>
+    - $<%= product.price %>
+    (Stock: <%= product.stock_quantity %>)
+  </p>
 <% end %>
