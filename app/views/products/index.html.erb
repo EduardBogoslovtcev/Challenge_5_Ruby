@@ -4,6 +4,7 @@
   <p>
     <a href="/products/<%= product.id %>"><%= product.title %></a>
     - $<%= product.price %>
-    (Stock: <%= product.stock_quantity %>)
+    - Stock: <%= product.stock_quantity %>
+    - Category: <%= product.category.name %>
   </p>
 <% end %>
